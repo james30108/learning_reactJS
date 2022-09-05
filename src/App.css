@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    background: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    margin: 30px auto;
+    width: 350px;
+    position: relative
+}
+
+.item-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.item-list li {
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    padding: 15px;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+.form-control {
+    background-color: white;
+}
+
+label {
+    display: inline-block;
+    margin: 10px 0;
+}
+input:focus {
+    outline: none;
+}
+input {
+    border: 1px solid #dedede;
+    border-radius: 2px;
+    display: block;
+    font-size: 16;
+    padding: 10px;
+    width: 100%;
+}
+
+.btn {
+    background-color: white;
+    color: green;
+    cursor: pointer;
+    display: block;
+    margin: 10px 0 30px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.expense {
+    border-right: 5px solid red;
+}
+
+.income {
+    border-right: 5px solid green;
+}
+
+.report-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.report-container>div {
+    flex: 1;
+    text-align: center;
+}
+
+.report-container>div:first-of-type {
+    border-right: 1px solid #dedede;
+}
+
+.report {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 5px 0;
+}
+
+.report-income {
+    color: green;
+}
+
+.report-expense {
+    color: red;
+}
